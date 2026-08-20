@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="presentation">
+  <style>
+    path{fill:none;stroke:#c7dbea;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2600;stroke-dashoffset:2600;animation:draw 24s ease-in-out infinite}
+    @keyframes draw{0%{stroke-dashoffset:2600}42%{stroke-dashoffset:0}78%{stroke-dashoffset:0}100%{stroke-dashoffset:-2600}}
+    @media (prefers-reduced-motion:reduce){path{animation:none;stroke-dashoffset:0}}
+  </style>
+  <path d="M44 154c30-50 91-69 138-40 48 29 47 87 13 116-38 32-111 4-133-52-27-69 30-142 101-132 73 10 113 94 79 157-31 58-120 62-166 14-49-51-29-135 36-160 72-28 154 25 158 103 4 80-76 137-151 112-78-26-112-121-67-191C98 9 210 10 271 72c64 64 55 170-19 224M250 130h690M940 130c0-38 31-69 69-69s69 31 69 69-31 69-69 69-69-31-69-69Zm25 0c0 24 20 44 44 44s44-20 44-44-20-44-44-44-44 20-44 44Zm25 0c0-11 8-19 19-19s19 8 19 19-8 19-19 19-19-8-19-19Z"/>
+</svg>
