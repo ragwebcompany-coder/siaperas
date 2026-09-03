@@ -143,12 +143,12 @@
   /* ---------------------------------------------------------- «ανοιχτά τώρα» */
   var badges = qa("[data-open-status]");
   if (badges.length) {
-    /* Δευτέρα έως Παρασκευή 09:00–21:00 */
-    var OPEN = 9 * 60, CLOSE = 21 * 60;
+    /* Δευτέρα, Πέμπτη & Παρασκευή 09:00–21:00 */
+    var OPEN = 9 * 60, CLOSE = 21 * 60, DAYS = [1, 4, 5];
     var now = new Date();
     var mins = now.getHours() * 60 + now.getMinutes();
     var day = now.getDay();
-    var isOpen = day >= 1 && day <= 5 && mins >= OPEN && mins < CLOSE;
+    var isOpen = DAYS.indexOf(day) > -1 && mins >= OPEN && mins < CLOSE;
     badges.forEach(function (b) {
       b.textContent = isOpen ? "Ανοιχτά τώρα" : "Κλειστά αυτή τη στιγμή";
       b.classList.add(isOpen ? "is-open" : "is-closed");

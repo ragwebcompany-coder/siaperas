@@ -1601,6 +1601,14 @@ body ::selection, body::selection { background-color: var(--cb-ink); color: #f5f
   background: #e8eef3;
 }
 
+/* πλέγμα φωτογραφιών του χώρου */
+.cb-figures {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+.cb-figures .cb-figure img { aspect-ratio: 4 / 3; object-fit: cover; }
+
 @media (max-width: 1023px) {
   .cb-hero__layout {
     grid-template-columns: 1fr;
