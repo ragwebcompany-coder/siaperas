@@ -1643,3 +1643,17 @@ body ::selection, body::selection { background-color: var(--cb-ink); color: #f5f
 .cb-social a:hover, .cb-social a:focus-visible { background: rgba(199,219,234,.12);
   border-color: var(--cb-mint-soft, rgba(199,219,234,.55)); color: #fff; transform: translateY(-2px); }
 .cb-social svg { width: 17px; height: 17px; flex-shrink: 0; }
+
+/* ---- hero: το λογότυπο (πινακίδα) αντί για φωτογραφία ----
+   Η πινακίδα δεν κόβεται: contain σε λευκό φόντο, ώστε να διαβάζεται
+   ολόκληρη πάνω στο σκούρο μπλε του hero. */
+.cb-hero__media--logo img {
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #fff;
+  border-color: rgba(245,248,251,.42);
+}
+
+/* Μεμονωμένη φωτογραφία σε πλήρες πλάτος ενότητας (χωρίς grid). */
+.cb-figure--wide { max-width: 62rem; margin: 3rem 0; }
+.cb-figure--wide img { aspect-ratio: 16 / 10; object-fit: cover; }
